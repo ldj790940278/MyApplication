@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <GridView
+        android:id="@+id/grid_test"
+        android:numColumns="4"
+        android:columnWidth="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:listSelector="@android:color/transparent"
+        android:horizontalSpacing="2dip"
+        android:verticalSpacing="5dip"
+        android:gravity="center"
+    />
+    <ListView
+        android:id="@+id/listview02"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        />
+<Button
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:text="请输入序列号..."
+    android:gravity="center"
+    android:background="@drawable/shape_wihte_frame"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RadioGroup
+        android:layout_width="match_parent"
+
+        android:id="@+id/navigation_btn"
+        android:layout_alignParentBottom="true"
+
+        android:orientation="horizontal"
+        android:layout_height="?actionBarSize">
+
+
+        <RadioButton
+            android:id="@+id/btn1"
+            android:text="包装"
+            android:gravity="center"
+            android:button="@null"
+            android:checked="true"
+            android:background="@drawable/navigation_bar_selector"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/btn2"
+            android:text="发货"
+            android:gravity="center"
+            android:button="@null"
+            android:background="@drawable/navigation_bar_selector"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/btn3"
+            android:text="脑海"
+            android:gravity="center"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:background="@drawable/navigation_bar_selector"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/btn4"
+            android:text="我的"
+            android:gravity="center"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:background="@drawable/navigation_bar_selector"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </RadioGroup>
+    </RelativeLayout>
+
+
+
+</LinearLayout>
