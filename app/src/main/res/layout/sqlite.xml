@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/denglu_layout">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="用户名："
+        android:id="@+id/yonghu"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入用户名"
+        android:id="@+id/EdiYonghu"
+        android:layout_toRightOf="@+id/yonghu"
+        android:layout_alignBaseline="@+id/yonghu"
+        android:background="@null"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="密    码："
+        android:layout_below="@+id/yonghu"
+        android:id="@+id/mima" />
+
+
+    <View android:id="@+id/zhong"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/state" />
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_below="@+id/yonghu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+
+
+
+        android:layout_centerHorizontal="true">
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入密码"
+        android:id="@+id/Edimima"
+        android:layout_alignBaseline="@+id/mima"
+        android:layout_alignBottom="@+id/mima"
+        android:layout_toRightOf="@+id/yonghu"
+        android:layout_toEndOf="@+id/yonghu"
+        android:background="@null"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="显示已有"
+        android:id="@+id/zhaohui"
+        android:layout_below="@+id/zhuce"
+        android:layout_alignLeft="@+id/zhuce"
+        android:layout_alignStart="@+id/zhuce"
+        android:onClick="onClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:id="@+id/denglu"
+        android:layout_below="@+id/mima"
+        android:layout_toLeftOf="@id/zhong"
+        android:layout_marginRight="60dp"
+        android:onClick="onClick"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/status"
+        android:textSize="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:id="@+id/zhuce"
+        android:onClick="onClick"
+        android:layout_below="@+id/Edimima"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="31dp"
+        android:layout_marginEnd="31dp" />
+
+    <Button
+        android:text="清除"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clean"
+        android:onClick="onClick"
+        android:layout_below="@+id/denglu"
+        android:layout_alignLeft="@+id/denglu"
+        android:layout_alignStart="@+id/denglu" />
+
+    <Button
+        android:text="跳转二"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_alignBaseline="@+id/zhaohui"
+        android:layout_alignBottom="@+id/zhaohui"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:text="跳转一"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Edimima"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button"
+        android:id="@+id/button5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="登录状态："
+        android:id="@+id/textView"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/clean"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="67dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">爆发组的APP</string>
+
+    <string name="title_activity_splash">splash</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="List_View">ListView演示</string>
+    <string name="commonControl_List">常用Android演示</string>
+    <string name="MemoryDemo">记忆功能</string>
+</resources>
